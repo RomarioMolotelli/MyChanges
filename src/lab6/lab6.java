@@ -13,7 +13,8 @@ public class lab6 {
         System.out.println("hello world");
         Random random = new Random();
         for (int i = 0; i < 5; i++) {
-            System.out.println("hello world " + random.nextInt(10) + " " + i); //for
+            System.out.println("hello world " + random.nextInt(10) + " " + i);
+            System.out.println("Hi");//for
 
 
         }
