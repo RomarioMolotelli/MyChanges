@@ -1,6 +1,7 @@
 
 public class Main1 {
     public static void main(String[] args) {
+        /*
         System.out.println("go go go");
         System.out.println("Hold this position");
         //intr
@@ -27,6 +28,26 @@ public class Main1 {
         big = 423522532;
         big = big / 2;
         System.out.println(+big);
+         */
+        /*
+        int a = 500, b = 250, c, d, e;
+        //математические операции
+        c = a + b;
+        d = a / b;
+        e = (++a) + (++b);
+        System.out.println("a+b= " + c + " a/b= " + d + " (++a) + (++b)= " + e);
+        //логические операции
+        boolean one = true, two = false;
+        System.out.println("one = "+one+ "two = "+two+ "one&two= "+(one&two));
+        System.out.println("one = "+one+ "two = "+two+ "one|two= "+(one|two));
+        System.out.println("one = "+one+ "two = "+two+ "one&two= "+(one^two));
+        System.out.println("one = "+one+ "!one= "+ !one);
+        //укороченные логические операторы (|| или) (&& и)
+        int g = 10; int z = 2;
+        if (z != 0 && (g % z)==0)
+            System.out.println("z delitel dlya n!");
+        */
+        
 
 
     }
