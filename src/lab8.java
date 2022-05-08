@@ -4,7 +4,7 @@ import java.util.Collections;
 
 public class lab8 {
     public static void main(String[] args) {
-        /*
+
         //Даны 4 числа типа int. Сравнить их и вывести наименьшее на консоль
         Scanner scnr = new Scanner(System.in);
         System.out.println("Enter 4 numbers");
@@ -32,13 +32,12 @@ public class lab8 {
         String name1 = "John";
         String name2 = "John";
         if (name1 == name2) {
-            System.out.println("This people are namesake");
-        }
-        else {
-            System.out.println("this people aren't namesake");
+            System.out.println("These people are namesake");
+        } else {
+            System.out.println("these people aren't namesake");
         }
 
-         */
+
         //Дано число месяца (тип int). Необходимо определить время года (зима, весна, лето, осень) и вывести на консоль.
         Scanner scnr1 = new Scanner(System.in);
         int Month = scnr1.nextInt();

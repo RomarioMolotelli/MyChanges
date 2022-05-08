@@ -28,7 +28,7 @@ public class Main1 {
         big = 423522532;
         big = big / 2;
         System.out.println(+big);
-         */
+
 
         int a = 500, b = 250, c, d, e;
         //математические операции
@@ -47,8 +47,23 @@ public class Main1 {
         if (z != 0 && (g % z)==0)
             System.out.println("z delitel dlya n!");
 
-        
+         */
+
+
+        int[] ArrayEx2 = new int[20];
+        int min = ArrayEx2[0];
+        for (int i = 0; i < ArrayEx2.length; i++ ) {
+            ArrayEx2[i] = ((int)(Math.random() * 41) - 20);
+            if (min > ArrayEx2[i]) {
+                min = ArrayEx2[i];
+            }
+            System.out.println(ArrayEx2[i]);
+        }
+        System.out.println("minimal number: " + min);
+
+
 
 
     }
+
 }
