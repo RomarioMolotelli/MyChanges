@@ -8,7 +8,11 @@ public class lab11 {
         //Создайте массив из 20 случайных чисел (числа должны быть в диапазоне от 0 до 1000)
         // и отсортируйте массив по убыванию при помощи сортировки пузырьком.
         int[] ArrayBubble = new int[1000];
-        System.out.printf("Array: %s", (Object) descendingArray(ArrayBubble));
+        int[] descendingArray = descendingArray(ArrayBubble);
+        System.out.print("Array: ");
+        for (int item : descendingArray){
+            System.out.printf("%d ", item);
+        }
     }
 
     private static int[] descendingArray(int[] array) {
