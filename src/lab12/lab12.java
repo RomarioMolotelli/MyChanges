@@ -1,4 +1,5 @@
 package lab12;
+import java.util.Arrays;
 
 public class lab12 {
     public static void main(String[] args) {
@@ -24,6 +25,7 @@ public class lab12 {
         //Даны матрицы С и D размерностью 3 на 3 и заполненные случайными числами в диапазоне от 0 до 99.
         //Выполните по отдельности сначала сложение,
         //потом умножения матриц друг на друга. Выведете исходные матрицы и результат вычислений на консоль.
+        /*
         int[][] arr1 = new int[3][3];
         int[][] arr2 = new int[3][3];
         int[][] mult = new int[3][3];
@@ -62,6 +64,67 @@ public class lab12 {
         }
         System.out.println();
 
+         */
+        //Просуммируйте все элементы двумерного массива.
+        /*
+        int[][] SumArray = {
+                {4, 9, 5},
+                {7, 4, 8},
+                {4, 5, 3}
+        };
+        int sum = 0;
+        for (int i = 0; i < SumArray.length; i++) {
+            for (int j = 0; j < SumArray.length; j++ ) {
+                sum += SumArray[i][j];
+            }
+        }
+        System.out.println("sum: " + sum);
+
+         */
+        //Дан двумерный массив, содержащий отрицательные и положительные числа.
+        //Выведете на экран номера тех ячеек массива, которые содержат отрицательные числа.
+        /*
+        int[][] NegativeArray = {
+                {-5, 8, 9},
+                {7, -3, 2},
+                {-4, -6, 1}
+
+        };
+        for (int i = 0; i < NegativeArray.length; i++) {
+            for (int j = 0; j < NegativeArray.length; j++) {
+                if (i < 0 && j <0) {
+
+                }
+
+            }
+        }
+         */
+        //Отсортируйте элементы в строках двумерного массива по возрастанию
+        int[][] Sort = {
+                {4, 1, 9},
+                {5, 7, 8},
+                {2, 3, 6}
+
+
+        };
+        int[][] SortArray = SortArray(Sort);
+        System.out.println("Array: " );
+        for (int[] item : SortArray) {
+            System.out.printf(" %d", item);
+
+        }
+
     }
+    private static int[][] SortArray(int[][] Arr) {
+        Arrays.sort(Arr);
+        for (int i = 0; i < Arr.length; i++) {
+            for (int j = 0; j < Arr.length; j++) {
+                System.out.println(Arr[i][j] + "  ");
+            }
+        }
+        return Arr;
+
+    }
+
 
 }
