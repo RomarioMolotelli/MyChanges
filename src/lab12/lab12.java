@@ -110,13 +110,16 @@ public class lab12 {
         int[][] SortArray = SortArray(Sort);
         System.out.println("Array: " );
         for (int[] item : SortArray) {
-            System.out.printf(" %d", item);
+            // %d для элемента который является массивом?
+            // в инете почитай про format specifiers c++
+            System.out.printf("%s", Arrays.toString(item));
 
         }
 
     }
     private static int[][] SortArray(int[][] Arr) {
-        Arrays.sort(Arr);
+        // Эта функция не сортируется двумерные массивы, насколько я понял.
+//        Arrays.sort(Arr);
         for (int i = 0; i < Arr.length; i++) {
             for (int j = 0; j < Arr.length; j++) {
                 System.out.println(Arr[i][j] + "  ");
