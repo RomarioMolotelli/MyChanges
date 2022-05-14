@@ -1,4 +1,5 @@
 package lab12;
+
 import java.util.Arrays;
 
 public class lab12 {
@@ -102,27 +103,27 @@ public class lab12 {
         //Отсортируйте элементы в строках двумерного массива по возрастанию
         int[][] Sort = {
                 {4, 1, 9},
-                {5, 7, 8},
-                {2, 3, 6}
+                {7, 5, 8},
+                {2, 6, 3}
 
 
         };
         int[][] SortArray = SortArray(Sort);
-        System.out.println("Array: " );
+        System.out.println("Array: ");
         for (int[] item : SortArray) {
-            // %d для элемента который является массивом?
-            // в инете почитай про format specifiers c++
+
             System.out.printf("%s", Arrays.toString(item));
 
         }
 
     }
+
     private static int[][] SortArray(int[][] Arr) {
-        // Эта функция не сортируется двумерные массивы, насколько я понял.
-//        Arrays.sort(Arr);
-        for (int i = 0; i < Arr.length; i++) {
+        for (int[] ints : Arr) {
+            Arrays.sort(ints);
             for (int j = 0; j < Arr.length; j++) {
-                System.out.println(Arr[i][j] + "  ");
+                Arrays.sort(Arr[j]);
+                System.out.println(ints[j] + "  ");
             }
         }
         return Arr;
