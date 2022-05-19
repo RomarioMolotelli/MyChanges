@@ -111,7 +111,6 @@ public class lab12 {
         int[][] SortArray = SortArray(Sort);
         System.out.println("Array: ");
         for (int[] item : SortArray) {
-
             System.out.printf("%s", Arrays.toString(item));
 
         }

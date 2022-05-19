@@ -1,6 +1,7 @@
 package lab13;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class lab13 {
     public static void main(String[] args) {
@@ -14,12 +15,31 @@ public class lab13 {
         }
          */
         //Посчитать среднее арифметическое чисел в массиве
+        /*
         int[] Average = {4, 8, 12, 16, 20};
         int[] AverageArr = AverageArr(Average);
         System.out.println("Array: ");
         for (int item : AverageArr) {
             System.out.printf("%s", item);
         }
+        /*
+         */
+        //Известны катеты прямоугольного треугольника, найти его площадь и периметр
+        /*
+        Scanner scnr = new Scanner(System.in);
+        System.out.println("Введите значения катетов прямоугольного треугольника: ");
+        double kat1 = scnr.nextDouble();
+        double kat2 = scnr.nextDouble();
+        double Gipotenuza = (double)(Math.sqrt((Math.pow(kat1, 2)+(Math.pow(kat2, 2)))));
+        double PerimetrResult = kat1 + kat2 + Gipotenuza;
+        double HalfGipotenuza = Gipotenuza/2;
+        double High = (double)(Math.sqrt((Math.pow(kat2, 2))-(Math.pow(HalfGipotenuza, 2))));
+        double Area = (Gipotenuza * High)/2;
+        System.out.println("result perimetr: " + PerimetrResult + " result area: " + Area);
+         */
+        //Даны два целых числа, найти их наибольший общий делитель и наименьшее общее кратное
+
+
 
     }
     //Дан массив целых чисел, найти среди элементов массива числа, которые делятся на 3 и на 6
@@ -33,6 +53,8 @@ public class lab13 {
         return array;
     }
      */
+    //Посчитать среднее арифметическое чисел в массиве
+    /*
     private static int[] AverageArr(int[] Arr) {
         if (Arr.length > 0) {
             double sum = 0;
@@ -44,4 +66,5 @@ public class lab13 {
         }
         return Arr;
     }
+     */
 }
