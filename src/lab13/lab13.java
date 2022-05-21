@@ -38,7 +38,39 @@ public class lab13 {
         System.out.println("result perimetr: " + PerimetrResult + " result area: " + Area);
          */
         //Даны два целых числа, найти их наибольший общий делитель и наименьшее общее кратное
+        /*
+        int first, second, NOD, NOK;
+        Scanner scnr1 = new Scanner(System.in);
+        System.out.println("Enter a first number: ");
+        if (scnr1.hasNextInt()) {
+            first = scnr1.nextInt();
+            System.out.println("Enter a second number: ");
+            if (scnr1.hasNextInt()) {
+                second = scnr1.nextInt();
+                int x = first, y = second;
+                while (first != 0 && second != 0) {
+                    if (first > second)
+                        first = first % second;
+                    else second = second % first;
+                }
+                NOD = first + second;
+                NOK = (((x * y) / (first + second)));
+                System.out.println("NOD: " + NOD);
+                System.out.println("NOK: " + NOK);
 
+            }
+        } else {
+            System.out.println("Wrong int Number");
+        }
+
+         */
+        //Даны радиус вращения и высота конуса, вычислить объем конуса.
+        Scanner con = new Scanner(System.in);
+        double rad = con.nextInt();
+        double high = con.nextInt();
+        double pi = Math.PI;
+        double volume = (double)(pi * (Math.pow(rad, 2) * high) / 3);
+        System.out.println("Volume of Conus = " + Math.round(volume));
 
 
     }
@@ -52,9 +84,8 @@ public class lab13 {
         }
         return array;
     }
-     */
+
     //Посчитать среднее арифметическое чисел в массиве
-    /*
     private static int[] AverageArr(int[] Arr) {
         if (Arr.length > 0) {
             double sum = 0;
@@ -66,5 +97,8 @@ public class lab13 {
         }
         return Arr;
     }
+
      */
+
+
 }
